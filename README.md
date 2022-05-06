@@ -22,7 +22,7 @@ The `build` script is a `bash` script that automates the process of exporting th
 4. Structure of escitalopram with stereochemistry indicated
    ![](svg/light/04.svg#gh-light-mode-only)
    ![](svg/dark/04.svg#gh-dark-mode-only)
-5. A representative scheme of the pentadehydro Diels-Alder (PDDA) reaction
+5. A representative scheme of the tetra Diels-Alder (TDDA) reaction
    ![](svg/light/05.svg#gh-light-mode-only)
    ![](svg/dark/05.svg#gh-dark-mode-only)
 6. A 7-coordinate tin complex
