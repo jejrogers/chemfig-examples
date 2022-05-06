@@ -25,3 +25,6 @@ The `build` script is a `bash` script that automates the process of exporting th
 5. A representative scheme of the pentadehydro Diels-Alder (PDDA) reaction
    ![](svg/light/05.svg#gh-light-mode-only)
    ![](svg/dark/05.svg#gh-dark-mode-only)
+6. A 7-coordinate tin complex
+   ![](svg/light/06.svg#gh-light-mode-only)
+   ![](svg/dark/06.svg#gh-dark-mode-only)
