@@ -1,0 +1,186 @@
+% -  single
+% =  double
+% ~  triple
+% <  cram
+% <: dash
+% bond arguments [dir in n*30deg,length,start atom,end atom,tikz code]
+% *n() for n size ring, **n() for n size ring with circle
+
+\chemstruct{
+    *6(
+        -
+        =
+        -
+        (-\textcolor{N}{N}*6(
+            -
+            -
+            -\textcolor{N}{N}(
+                -[1]
+                -[-1]
+                -[1]
+                -[-1]
+                -[1]\textcolor{O}{O}
+                -[-1]*6(
+                    -
+                    =
+                    -
+                    (*6(
+                        -
+                        -
+                        -
+                        (=\textcolor{O}{O})
+                        -\textcolor{N}{\chemabove{N}{H}}
+                        -
+                        -[,,,,draw=none]
+                    ))
+                    =
+                    -
+                    =
+                )
+            )
+            -
+            -
+            -))
+        =
+        (-\textcolor{Cl}{Cl})
+        -
+        (-\textcolor{Cl}{Cl})
+        =
+    )
+}
+
+\chemstruct{
+    \textcolor{t}{H_3}|\textcolor{t}{C}-[-1,,,,t]\textcolor{Ot}{O}
+    -[1,,,,t]*6(
+        -[,,,,]
+        =[,,,,]
+        -[,,,,](
+            -[1,,,,](-[1,0.33,,,draw=none]\textcolor{t}{\ast})(
+                -[3,,,,t]*6(
+                    (-[-5,,,,t]\textcolor{Ot}{H}|\textcolor{Ot}{O})
+                    -[,,,,t]
+                    -[,,,,t]
+                    -[,,,,t]
+                    -[,,,,t]
+                    -[,,,,t]
+                    -[,,,,t]
+                )
+            )
+            -[-1,,,,]
+            -[1,,,,]\textcolor{N}{N}
+            (-[3,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3})
+            -[-1,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3}
+        )
+        =[,,,,]
+        -[,,,,]
+        =[,,,,]
+    )
+}
+
+\chemstruct{
+    *6(
+        -[,,,,]
+        =[,,,,]
+        -[,,,,](
+            -[1,,,,]
+            -[-1,,,,]
+            (-[-5,0.33,,,draw=none]\textcolor{t}{\ast})
+            (-[-3,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3})
+            -[1,,,,]\textcolor{N}{\chemabove{N}{H}}
+            -[-1,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3}
+        )
+        =[,,,,]
+        -[,,,,]
+        (*5(
+            -[,,,,t]\textcolor{Ot}{O}
+            -[,,,,t]
+            -[,,,,t]\textcolor{Ot}{O}
+            -[,,,,t]
+            -[,,,,draw=none]
+        ))
+        =[,,,,]
+    )
+}
+
+\chemstruct{
+    \textcolor{N}{N}~[1]
+    -[1]*6(
+        -
+        =(*5(
+            -
+            -\textcolor{O}{O}
+            -
+            (-[-3.75,0.5,,,draw=none]\stereomarker{S})
+            (<:[4]*6(
+                -
+                =
+                -
+                (-\textcolor{F}{F})
+                =
+                -
+                =
+            ))
+            (
+                <[1]
+                -[-1]
+                -[1]
+                -[-1]\textcolor{N}{N}
+                (-[-3]CH_3)
+                -[1]CH_3
+            )
+            -
+            -[,,,,draw=none]
+        ))
+        -
+        =
+        -
+        =
+    )
+}
+
+\chemscheme{
+    \schemestart
+        \chemfig{
+            *6(
+                -[@{b1},,,,draw=none]
+                =[@{d1}]
+                -[@{s1}](
+                    ~[@{t1}3]
+                )
+                -[,,,,draw=none]@{b2}
+                -[,,,,draw=none]
+                ~[@{t2}]
+            )
+        }
+        \arrow{<<->[\cond{\Delta}]}
+        \chemleft[
+            \chemfig{
+                *6(
+                    -
+                    -
+                    =
+                    =
+                    -
+                    =
+                )
+            }
+        \chemright]
+        \arrow{->[\cond{\pm\ce{H+}}]}
+        \chemfig{
+            *6(
+                -
+                =
+                -
+                =
+                -
+                =
+            )
+        }
+        \schemestop
+
+    \chemmove[shorten <= 0.77ex, shorten >= 0.1ex, line width = 0.067em, r]{
+        \draw (d1) .. controls +(100:1em) and +(80:1em) .. (b1);
+        \draw (t1) .. controls +(180:1em) and +(-180:1em) .. (s1);
+        \draw (t2) .. controls +(-20:1em) and +(-90:1em) .. (b2);
+    }
+}

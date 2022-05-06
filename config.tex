@@ -1,0 +1,62 @@
+\documentclass[10pt,multi={struct},border=10mm]{standalone}
+
+\usepackage{fontspec}
+\setmainfont{FreeSans}
+
+\usepackage[svgnames]{xcolor}
+\colorlet{N}{blue!80!black}
+\colorlet{O}{red!80!black}
+\colorlet{Ot}{red!30!white}
+\colorlet{Cl}{green!80!black}
+\colorlet{F}{green!30!yellow!80!black}
+\colorlet{t}{black!30!white}
+\colorlet{l}{black!50!white}
+\colorlet{r}{magenta!80!black}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+
+\usepackage{chemfig}
+\setchemfig{
+    angle increment=30,
+    atom sep=1.67em,
+    double bond sep=0.67ex,
+    bond style={line width=0.1em},
+    cram width=1ex,
+    cram dash width=0.1em,
+    cram dash sep=0.2em,
+    arrow style={line width=0.067em},
+    arrow head=-{Stealth},
+    arrow label sep=1ex,
+    cycle radius coeff=0.75,
+    chemfig style={line width=0.1em},
+}
+
+\usepackage{mhchem}
+
+\newcommand{\chemstruct}[1]{
+    \begin{struct}
+        \chemfig{
+            #1
+        }
+    \end{struct}
+}
+
+\newcommand{\chemscheme}[1]{
+    \begin{struct}
+        #1
+    \end{struct}
+}
+
+\newcommand{\stereomarker}[1]{
+    \scalebox{0.67}{\textcolor{l}{\emph{(#1)}}}
+}
+
+\newcommand{\cond}[1]{
+    \scalebox{1}{#1}
+}
+
+\begin{document}
+    \color{black!99!white}
+    \include{structures}
+\end{document}
