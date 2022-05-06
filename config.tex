@@ -4,14 +4,14 @@
 \setmainfont{FreeSans}
 
 \usepackage[svgnames]{xcolor}
-\colorlet{N}{blue!80!black}
-\colorlet{O}{red!80!black}
-\colorlet{Ot}{red!30!white}
-\colorlet{Cl}{green!80!black}
-\colorlet{F}{green!30!yellow!80!black}
-\colorlet{t}{black!30!white}
-\colorlet{l}{black!50!white}
-\colorlet{r}{magenta!80!black}
+\colorlet{N}{blue!80!fg}
+\colorlet{O}{red!80!fg}
+\colorlet{Ot}{red!30!bg}
+\colorlet{Cl}{green!80!fg}
+\colorlet{F}{green!30!yellow!80!fg}
+\colorlet{t}{fg!30!bg}
+\colorlet{l}{fg!50!bg}
+\colorlet{r}{magenta!80!fg}
 
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathmorphing}
@@ -57,6 +57,6 @@
 }
 
 \begin{document}
-    \color{black!99!white}
+    \color{fg!99!bg}
     \include{structures}
 \end{document}

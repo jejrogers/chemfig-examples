@@ -6,8 +6,11 @@ mkdir svg/
 
 # light
 
-## modify colors
-cat config.tex > light.tex
+## specify colors
+cat config.tex |\
+sed 's/bg/white/g' |\
+sed 's/fg/black/g' \
+> light.tex
 
 ## run twice as sometimes this is needed to pickup certain things
 lualatex light
@@ -25,11 +28,10 @@ mv *.svg svg/light/
 
 # dark
 
-## modify colors
+## specify colors
 cat config.tex |\
-sed 's/black/temp/g' |\
-sed 's/white/black/g' |\
-sed 's/temp/white/g' \
+sed 's/bg/black/g' |\
+sed 's/fg/white/g' \
 > dark.tex
 
 ## run twice as sometimes this is needed to pickup certain things
