@@ -153,7 +153,7 @@
                 ~[@{t2}]
             )
         }
-        \arrow(c2.base east--c2.base west){<=>[\cond{\Delta}][][8.4pt]}
+        \arrow(c2.base east--c2.base west){<=>[\cond{Δ}][][8.4pt]}
         \chemleft[
             \chemfig{
                 *6(
@@ -166,7 +166,7 @@
                 )
             }
         \chemright]
-        \arrow(c2.base east--c2.base west){->[\cond{\pm\ce{H+}}][][8.4pt]}
+        \arrow(c2.base east--c2.base west){->[\cond{±\ce{H+}}][][8.4pt]}
         \chemfig{
             *6(
                 -
@@ -186,6 +186,39 @@
     }
 }
 
-\chemstruct{
-    H_3C-[-1]S-[+1](-[-1]S-[+1,2]Sn?(<[+4,2]I)(<:[-2,2]I))=[+3]N-[+1]N?=[+3](-[+5]H_3C)-[+1]*6(=N?-(-[-1](-[+1]CH_3)=[-3]N?-[-1]N=[-3](-[-5]S?)-[-1]S-[+1]CH_3)=-=-)
+\chemscheme{
+    \chemfig{
+        \textcolor{Fe}{Fe}
+            (-[3,1.25,,,]@{top}
+            -[3,0.4,,,draw=none]
+                (
+                    [1]-[-0.5,,,,]
+                    (-[0](=[2]\textcolor{O}{O})-[-2]C|H_3)
+                    <[-4,0.67]?[1]
+                )
+                (
+                    -[-5.5]
+                    <[-2,0.67]
+                    ?[1,,{line width=0.8ex},{shorten <= -0.5ex},{shorten >= -0.5ex}]
+                )
+            )
+            (-[-3,1.15,,,]@{bottom}
+            -[-3,0.5,,,draw=none]
+                (
+                    >[0.5,,,,]
+                    -[4,0.67]?[2]
+                )
+                (
+                    >[5.5,,,,]
+                    (-[6](=[4]\textcolor{O}{O})-[-4,,,2]H_3|C)
+                    -[2,0.67]
+                    ?[2,,]
+                )
+            )
+    }
+    
+    \chemmove[line width = 0.1em]{
+        \draw (top) ellipse (1em and 0.4em);
+        \draw (bottom) ellipse (1em and 0.4em);
+    }
 }
