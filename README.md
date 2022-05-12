@@ -28,3 +28,6 @@ The `build` script is a `bash` script that automates the process of exporting th
 6. Diacetyl ferrocene structure
    ![](svg/light/06.svg#gh-light-mode-only)
    ![](svg/dark/06.svg#gh-dark-mode-only)
+7. Structure of NMDA receptor antagonist memantine
+   ![](svg/light/07.svg#gh-light-mode-only)
+   ![](svg/dark/07.svg#gh-dark-mode-only)
