@@ -68,7 +68,7 @@
 <path style="fill:none;stroke-width:0.99632;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 74.274375 -33.276188 L 59.864219 -24.955875 " transform="matrix(1,0,0,-1,0.335,21.216)"/>
 <path style="fill:none;stroke-width:0.99632;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 70.774375 -35.295719 L 59.864219 -28.994938 " transform="matrix(1,0,0,-1,0.335,21.216)"/>
 <g style="fill:rgb(69.999695%,69.999695%,69.999695%);fill-opacity:1;">
-  <use xlink:href="#glyph2-1" x="62.463" y="29.107"/>
+  <use xlink:href="#glyph2-1" x="57.708" y="26.362"/>
 </g>
 <path style="fill:none;stroke-width:0.99632;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 59.864219 -8.319156 L 74.274375 0.00115625 " transform="matrix(1,0,0,-1,0.335,21.216)"/>
 <g style="fill:rgb(0%,0%,79.998779%);fill-opacity:1;">
