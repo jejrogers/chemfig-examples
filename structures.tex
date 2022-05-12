@@ -160,7 +160,7 @@
                     -
                     -
                     =
-                    =\textcolor{N}{N}
+                    =\charge{90=\:}{\textcolor{N}{N}}
                     -
                     =
                 )
@@ -172,14 +172,20 @@
                 -
                 =
                 -
-                =\textcolor{N}{N}
+                =\charge{90=\:}{\textcolor{N}{N}}
                 -
                 =
             )
         }
     \schemestop
 
-    \chemmove[shorten <= 0.77ex, shorten >= 0.1ex, line width = 0.067em, r]{
+    \chemmove[
+        arrows = {-Triangle[scale = 0.67]},
+        shorten <= 0.77ex,
+        shorten >= 0.1ex,
+        line width = 0.1em,
+        r
+    ]{
         \draw (d1) .. controls +(100:1em) and +(80:1em) .. (b1);
         \draw (t1) .. controls +(180:1em) and +(-180:1em) .. (s1);
         \draw (t2) .. controls +(-20:1em) and +(-90:1em) .. (b2);
