@@ -1,11 +1,5 @@
-% -  single
-% =  double
-% ~  triple
-% <  cram
-% <: dash
-% bond arguments [dir in n*30deg,length,start atom,end atom,tikz code]
-% *n() for n size ring, **n() for n size ring with circle
-
+% simple structure that shows joined rings and coloured atoms, as well as use of
+% the \chemabove{}{} macro
 \chemstruct{
     *6(
         -
@@ -49,6 +43,10 @@
     )
 }
 
+% structure showing the use of a single hook (?) to join distant atoms, in this
+% case to make a ring structure not using the * ring options
+% also shows how to alter colour, style and type of bonds
+% shows the use of an invisible bond to place a stereocentre indicator
 \chemstruct{
     ?-[1.5,,,,t]
     -[-1,,,,t]
@@ -77,31 +75,7 @@
     ?[,{<},{t}]
 }
 
-\chemstruct{
-    *6(
-        -[,,,,]
-        =[,,,,]
-        -[,,,,](
-            -[1,,,,]
-            -[-1,,,,]
-            (-[-5,0.33,,,draw=none]\textcolor{t}{*})
-            (-[-3,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3})
-            -[1,,,,]\textcolor{N}{\chemabove{N}{H}}
-            -[-1,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3}
-        )
-        =[,,,,]
-        -[,,,,]
-        (*5(
-            -[,,,,t]\textcolor{Ot}{O}
-            -[,,,,t]
-            -[,,,,t]\textcolor{Ot}{O}
-            -[,,,,t]
-            -[,,,,draw=none]
-        ))
-        =[,,,,]
-    )
-}
-
+% shows the use of wedge and dash bonds as well as the stereochemical marker
 \chemstruct{
     \textcolor{N}{N}~[1]
     -[1]*6(
@@ -138,6 +112,8 @@
     )
 }
 
+% shows the basics of a scheme, including electron movement, arrows and reaction
+% conditions, as well as aligning of molecules in a scheme
 \chemscheme{
     \schemestart
         \chemfig{
@@ -178,7 +154,6 @@
             )
         }
     \schemestop
-
     \chemmove[
         arrows = {-Triangle[scale = 0.67]},
         shorten <= 0.77ex,
@@ -192,43 +167,42 @@
     }
 }
 
+% shows the use of the \chemmove{} macro to draw on top of the structure,
+% as well as some tricks using invisible bonds to generate correctly placed
+% nodes for ligands with hapticity greater than unity
+% shows how to draw lone pairs on an atom
 \chemscheme{
     \chemfig{
         \textcolor{Fe}{Fe}
-            (-[3,1.25,,,]@{top}
-            -[3,0.4,,,draw=none]
-                (
-                    [1]-[-0.5,,,,]
-                    (-[0](=[2]\textcolor{O}{O})-[-2]C|H_3)
-                    <[-4,0.67]?[1]
-                )
-                (
-                    -[-5.5]
-                    <[-2,0.67]
-                    ?[1,,{line width=0.8ex},{shorten <= -0.33ex},{shorten >= -0.33ex}]
-                )
-            )
-            (-[-3,1.15,,,]@{bottom}
-            -[-3,0.5,,,draw=none]
-                (
-                    >[0.5,,,,]
-                    -[4,0.67]?[2]
-                )
-                (
-                    >[5.5,,,,]
-                    (-[6](=[4]\textcolor{O}{O})-[-4,,,2]H_3|C)
-                    -[2,0.67]
-                    ?[2,,]
-                )
-            )
+        (-[3,1.25,,,]@{top}
+        -[3,0.4,,,draw=none](
+            [1]-[-0.5,,,,]
+            (-[0](=[2]\textcolor{O}{O})-[-2]C|H_3)
+            <[-4,0.67]?[1]
+        )(
+            -[-5.5]
+            <[-2,0.67]
+            ?[1,,{line width=0.8ex},{shorten <= -0.33ex},{shorten >= -0.33ex}]
+        ))
+        (-[-3,1.15,,,]@{bottom}
+        -[-3,0.5,,,draw=none](
+            >[0.5,,,,]
+            -[4,0.67]?[2]
+        )(
+            >[5.5,,,,]
+            (-[6](=[4]\textcolor{O}{O})-[-4,,,2]H_3|C)
+            -[2,0.67]
+            ?[2,,]
+        ))
     }
-    
     \chemmove[line width = 0.1em]{
         \draw (top) ellipse (1em and 0.4em);
         \draw (bottom) ellipse (1em and 0.4em);
     }
 }
 
+% an example showing the more complex use of mutiple hooks to generate a multi-
+% cyclic, non-planar structure
 \chemstruct{
     ?[1]-[2](
         -[3]

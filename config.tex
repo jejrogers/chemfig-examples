@@ -1,24 +1,41 @@
+% use standalone package to get each structure on an individual page
 \documentclass[10pt,multi={struct},border=10mm]{standalone}
 
+% change the font to one installed on the system
+% requires lualatex
 \usepackage{fontspec}
 \setmainfont{FreeSans}
 
+% let color be used and define some common ones
+% fg and bg are placeholders changed in the build script
 \usepackage[svgnames]{xcolor}
+%% nitrogen
 \colorlet{N}{blue!80!fg}
+%% oxygen
 \colorlet{O}{red!80!fg}
-\colorlet{Ot}{red!80!fg!30!bg}
+%% chlorine
 \colorlet{Cl}{green!80!fg}
+%% fluorine
 \colorlet{F}{green!30!yellow!80!fg}
+%% iron
 \colorlet{Fe}{orange!50!black!80!fg}
+%% psuedotransparency for lines and elements
 \colorlet{t}{fg!30!bg}
+\colorlet{Ot}{red!80!fg!30!bg}
+%% light color, for stereochemical markers
 \colorlet{l}{fg!50!bg}
+%% color for mechanistic arrows
 \colorlet{r}{magenta!80!fg}
 
+% import tikz library to allow for wavy bonds
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathmorphing}
 
+% set a bunch of chemfig default options to desired values
+% tried to define in terms of font size (i.e. em and ex) so scales cleanly
 \usepackage{chemfig}
 \setchemfig{
+    %% controls the angle so that default bonds orientations are integers
     angle increment=30,
     atom sep=1.67em,
     double bond sep=0.67ex,
@@ -32,14 +49,19 @@
     cycle radius coeff=0.75,
     chemfig style={line width=0.1em},
 }
+
+% set parameters for charges and electrons on atoms
 \setcharge{
     extra sep = 0.5ex,
+    %% for lewis double dots
     .radius = 0.05em,
     .style = {fill = fg},
 }
 
+% needed for chemical formulae in reaction conditions on arrows
 \usepackage{mhchem}
 
+% custom commands to make structures.tex file cleaner
 \newcommand{\chemstruct}[1]{
     \begin{struct}
         \chemfig{
@@ -47,22 +69,24 @@
         }
     \end{struct}
 }
-
 \newcommand{\chemscheme}[1]{
     \begin{struct}
         #1
     \end{struct}
 }
 
+% provides scaling paramters for stereochemistry markers and reaction conditions
 \newcommand{\stereomarker}[1]{
     \scalebox{0.67}{\textcolor{l}{\emph{(#1)}}}
 }
-
 \newcommand{\cond}[1]{
     \scalebox{1}{#1}
 }
 
+% main document
 \begin{document}
+    %% pdfcrop runs into issues when pure white is used and will crop it
     \color{fg!99!bg}
+    %% imports the structures.tex document
     \include{structures}
 \end{document}

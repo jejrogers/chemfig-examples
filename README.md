@@ -22,33 +22,26 @@ The `build` script is a `bash` script that automates the process of exporting th
 
    ![](svg/dark/02.svg#gh-dark-mode-only)
 
-3. Structure of MDMA with phenethylamine backbone indicated
-
-   ![](svg/light/03.svg#gh-light-mode-only)
-
-   ![](svg/dark/03.svg#gh-dark-mode-only)
-
-4. Structure of escitalopram with stereochemistry indicated
+3. Structure of escitalopram with stereochemistry indicated
 
    ![](svg/light/04.svg#gh-light-mode-only)
 
    ![](svg/dark/04.svg#gh-dark-mode-only)
 
-5. A representative scheme of the tetradehydro Diels-Alder (TDDA) reaction
+4. A representative scheme of the tetradehydro Diels-Alder (TDDA) reaction
 
    ![](svg/light/05.svg#gh-light-mode-only)
 
    ![](svg/dark/05.svg#gh-dark-mode-only)
 
-6. Diacetyl ferrocene structure
+5. Diacetyl ferrocene structure
 
    ![](svg/light/06.svg#gh-light-mode-only)
 
    ![](svg/dark/06.svg#gh-dark-mode-only)
 
-7. Structure of NMDA receptor antagonist memantine
+6. Structure of NMDA receptor antagonist memantine
 
    ![](svg/light/07.svg#gh-light-mode-only)
 
    ![](svg/dark/07.svg#gh-dark-mode-only)
-
