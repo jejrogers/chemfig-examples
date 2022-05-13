@@ -45,3 +45,9 @@ The `build` script is a `bash` script that automates the process of exporting th
    ![](svg/light/06.svg#gh-light-mode-only)
 
    ![](svg/dark/06.svg#gh-dark-mode-only)
+
+6. A transition metal complex with counterions (Ru(bpy3)Cl2)
+
+   ![](svg/light/07.svg#gh-light-mode-only)
+
+   ![](svg/dark/07.svg#gh-dark-mode-only)
