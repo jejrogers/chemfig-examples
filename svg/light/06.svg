@@ -29,14 +29,14 @@
 <path style="fill:none;stroke-width:0.99632;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.0006875 -0.00125 L 8.317094 14.408906 " transform="matrix(1,0,0,-1,22.679,59.155)"/>
 <path style="fill:none;stroke-width:0.99632;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 8.317094 14.408906 L 8.317094 31.045625 " transform="matrix(1,0,0,-1,22.679,59.155)"/>
 <path style="fill:none;stroke-width:0.99632;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 8.317094 31.045625 L 24.391312 35.354219 " transform="matrix(1,0,0,-1,22.679,59.155)"/>
-<g style="fill:rgb(0%,0%,79.998779%);fill-opacity:1;">
+<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-1" x="43.433" y="10.797"/>
 </g>
 <path style="fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.997406 -0.00178125 C 0.997406 -0.275219 1.220062 -0.497875 1.4935 -0.497875 C 1.770844 -0.497875 1.9935 -0.275219 1.9935 -0.00178125 C 1.9935 0.275563 1.770844 0.498219 1.4935 0.498219 C 1.220062 0.498219 0.997406 0.275563 0.997406 -0.00178125 Z M -1.990875 -0.00178125 C -1.990875 -0.275219 -1.768219 -0.497875 -1.494781 -0.497875 C -1.217438 -0.497875 -0.994781 -0.275219 -0.994781 -0.00178125 C -0.994781 0.275563 -1.217438 0.498219 -1.494781 0.498219 C -1.768219 0.498219 -1.990875 0.275563 -1.990875 -0.00178125 Z M -1.990875 -0.00178125 " transform="matrix(1,0,0,-1,47.069,0.924)"/>
-<g style="fill:rgb(0%,0%,79.998779%);fill-opacity:1;">
+<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-2" x="50.705" y="10.797"/>
 </g>
-<g style="fill:rgb(0%,0%,79.998779%);fill-opacity:1;">
+<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph1-1" x="57.888" y="12.31"/>
 </g>
 <path style="fill:none;stroke-width:0.99632;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 24.391312 35.354219 L 24.391312 46.365938 " transform="matrix(1,0,0,-1,22.679,59.155)"/>
