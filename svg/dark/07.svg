@@ -159,6 +159,7 @@
 <path style="fill:none;stroke-width:0.99632;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(98.999023%,98.999023%,98.999023%);stroke-opacity:1;stroke-miterlimit:10;" d="M -14.409094 -54.716656 L 0.0010625 -63.033062 " transform="matrix(1,0,0,-1,65.788,76.631)"/>
 <path style="fill:none;stroke-width:0.99632;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(98.999023%,98.999023%,98.999023%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.0010625 -63.033062 L 14.407313 -54.716656 " transform="matrix(1,0,0,-1,65.788,76.631)"/>
 <path style="fill:none;stroke-width:0.99632;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(98.999023%,98.999023%,98.999023%);stroke-opacity:1;stroke-miterlimit:10;" d="M 14.407313 -54.716656 L 14.407313 -38.076031 " transform="matrix(1,0,0,-1,65.788,76.631)"/>
+<path style="fill:none;stroke-width:0.99632;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(98.999023%,98.999023%,98.999023%);stroke-opacity:1;stroke-miterlimit:10;" d="M 28.817469 -29.759625 L 14.407313 -38.076031 " transform="matrix(1,0,0,-1,65.788,76.631)"/>
 <g style="fill:rgb(19.999695%,19.999695%,100%);fill-opacity:1;">
   <use xlink:href="#glyph1-3" x="62.152" y="110.021"/>
 </g>
