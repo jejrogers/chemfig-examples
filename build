@@ -43,3 +43,11 @@ mkdir svg/dark/
 mv *.svg svg/dark/
 ## cleanup
 rm *aux *log dark.tex
+
+# lines of code excluding comments
+echo `cat *tex build |\
+    sed '/^#/d'|\
+    sed '/^%/d'|\
+    sed '/^[[:space:]]*$/d' |\
+    wc -l`\
+" loc"
