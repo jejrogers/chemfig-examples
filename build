@@ -5,49 +5,61 @@ rm -r svg/
 mkdir svg/
 
 # light
-
 ## specify colors
 cat config.tex |\
 sed 's/bg/white/g' |\
 sed 's/fg/black/g' \
 > light.tex
-
 ## run twice as sometimes this is needed to pickup certain things
 lualatex light
 lualatex light
-
 ## crop whitespace from pdf
 ## whitespace is originally included as some decorations are placed outside the
 ## main area by chemfig
 pdfcrop --margins 0 light.pdf light.pdf
-
 ## break pdf into an svg for each page and output numbered
 pdf2svg light.pdf %02d.svg all
 mkdir svg/light/
 mv *.svg svg/light/
+## cleanup
+rm *aux *log light.tex
 
 # dark
-
 ## specify colors
 cat config.tex |\
 sed 's/bg/black/g' |\
 sed 's/fg/white/g' \
 > dark.tex
-
 ## run twice as sometimes this is needed to pickup certain things
 lualatex dark
 lualatex dark
-
 ## crop whitespace from pdf
 ## whitespace is originally included as some decorations are placed outside the
 ## main area by chemfig
 pdfcrop --margins 0 dark.pdf dark.pdf
-
 ## break pdf into an svg for each page and output numbered
 pdf2svg dark.pdf %02d.svg all
 mkdir svg/dark/
 mv *.svg svg/dark/
+## cleanup
+rm *aux *log dark.tex
 
-# cleanup
-# keep light pdf for monitoring
-rm *aux *log light.tex dark.tex dark.pdf
+# # custom
+# ## specify colors
+# cat config.tex |\
+# sed 's/bg/white/g' |\
+# sed 's/fg/red/g' \
+# > custom.tex
+# ## run twice as sometimes this is needed to pickup certain things
+# lualatex custom
+# lualatex custom
+# ## crop whitespace from pdf
+# ## whitespace is originally included as some decorations are placed outside the
+# ## main area by chemfig
+# pdfcrop --margins 0 custom.pdf custom.pdf
+# ## break pdf into an svg for each page and output numbered
+# pdf2svg custom.pdf %02d.svg all
+# mkdir svg/custom/
+# mv *.svg svg/custom/
+# ## cleanup
+# rm *aux *log custom.tex
