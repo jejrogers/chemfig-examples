@@ -48,6 +48,14 @@ requires `pdf2svg`, `pdfcrop` and `sed`.
 
    ![](svg/dark/06.svg#gh-dark-mode-only)
 
+### Polymers
+
+1. Homopolymer polystyrene
+
+   ![](svg/light/08.svg#gh-light-mode-only)
+
+   ![](svg/dark/08.svg#gh-dark-mode-only)
+
 ### Inorganic Compounds
 
 1. Ferrocene derivative
@@ -56,7 +64,7 @@ requires `pdf2svg`, `pdfcrop` and `sed`.
 
    ![](svg/dark/05.svg#gh-dark-mode-only)
 
-2. Ruthenium trisbypridine salt
+2. Ruthenium trisbypridine charged complex
 
    ![](svg/light/07.svg#gh-light-mode-only)
 
@@ -69,4 +77,3 @@ requires `pdf2svg`, `pdfcrop` and `sed`.
    ![](svg/light/04.svg#gh-light-mode-only)
 
    ![](svg/dark/04.svg#gh-dark-mode-only)
-

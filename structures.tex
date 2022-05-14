@@ -280,12 +280,6 @@
         )
     }
     \chemright]
-    \arrow{0}[,0,]
-    \chemleft[
-    \chemfig{
-        \ce{\textcolor{Cl}{Cl}-}
-    }
-    \chemright]
     \schemestop
     \chemmove[
         arrows = {-Triangle[scale = 0.67]},
@@ -302,6 +296,28 @@
     }
    \chemmove{
         \node[xshift = 1ex] at (c1.north east) {2+};
-        \node[xshift = 0.5ex] at (c2.south east) {2};
    }
+\end{struct}
+
+% polymer example using the \polymerdelim maco
+\begin{struct}
+    \chemfig{
+        -[@{open}1]
+        -[-1]
+            (-[-3]*6(
+                -
+                =
+                -
+                =
+                -
+                =
+            ))
+        -[@{close}1]
+    }
+    \polymerdelim[
+        delimiters = {[]},
+        height = 0.84em,
+        depth = 0.84em,
+        indice = {\text{\emph{n}}}
+    ]{open}{close}
 \end{struct}
