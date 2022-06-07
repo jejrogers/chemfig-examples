@@ -113,3 +113,9 @@ requires `pdf2svg`, `pdfcrop` and `sed`.
    ![](svg/light/04.svg#gh-light-mode-only)
 
    ![](svg/dark/04.svg#gh-dark-mode-only)
+
+2. Decarboxylation of cyclic peroxyester to excited ketone
+
+   ![](svg/light/15.svg#gh-light-mode-only)
+
+   ![](svg/dark/15.svg#gh-dark-mode-only)

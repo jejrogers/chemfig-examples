@@ -106,10 +106,10 @@
   <use xlink:href="#glyph1-2" x="79.277216" y="91.427"/>
 </g>
 <g style="fill:rgb(0%,0%,69.999695%);fill-opacity:1;">
-  <use xlink:href="#glyph1-3" x="108.466" y="111.529"/>
+  <use xlink:href="#glyph1-3" x="108.466" y="111.392"/>
 </g>
 <path style="fill:none;stroke-width:1.1956;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 64.840844 -25.72925 C 64.840844 -18.565187 59.03225 -12.7605 51.872094 -12.7605 C 44.708031 -12.7605 38.903344 -18.565187 38.903344 -25.72925 C 38.903344 -32.889406 44.708031 -38.698 51.872094 -38.698 C 59.03225 -38.698 64.840844 -32.889406 64.840844 -25.72925 " transform="matrix(1,0,0,-1,78.249,91.427)"/>
-<path style="fill:none;stroke-width:1.1956;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 34.583031 -22.096437 L 34.583031 -35.709719 " transform="matrix(1,0,0,-1,78.249,91.427)"/>
+<path style="fill:none;stroke-width:1.1956;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 34.583031 -22.233156 L 34.583031 -35.709719 " transform="matrix(1,0,0,-1,78.249,91.427)"/>
 <path style="fill:none;stroke-width:1.1956;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 34.583031 -35.709719 L 51.872094 -45.694094 " transform="matrix(1,0,0,-1,78.249,91.427)"/>
 <path style="fill:none;stroke-width:1.1956;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 51.872094 -45.694094 L 69.161156 -35.709719 " transform="matrix(1,0,0,-1,78.249,91.427)"/>
 <path style="fill:none;stroke-width:1.1956;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0.999451%,0.999451%,0.999451%);stroke-opacity:1;stroke-miterlimit:10;" d="M 69.161156 -35.709719 L 69.161156 -15.744875 " transform="matrix(1,0,0,-1,78.249,91.427)"/>

@@ -135,7 +135,7 @@
         ~[@{t2}]
     )
 }
-\arrow(c2.base east--c2.base west){<=>[\cond{Δ}][][8.4pt]}
+\arrow(c1.base east--c2.base west){<=>[\cond{Δ}][][8.4pt]}
 \chemleft[
 \chemfig{
     *6(
@@ -148,7 +148,7 @@
     )
 }
 \chemright]
-\arrow(c2.base east--c2.base west){->[\cond{±\ce{H+}}][][8.4pt]}
+\arrow(c2.base east--c3.base west){->[\cond{$±$\ce{H+}}][][8.4pt]}
 \chemfig{
     *6(
         -
@@ -540,5 +540,50 @@
         =
         -
     )
+}
+\end{struct}
+
+% decarboxylation of a cyclic peroxyester
+\begin{struct}
+\schemestart
+\chemfig{
+    R^1
+    >[0]
+    -[@{co}0]\textcolor{O}{O}
+    -[@{oo}3]\textcolor{O}{O}
+    -[@{oc}6]
+        (=[:135]\textcolor{O}{O})
+    -[@{cc}-3]
+    <:[-3]R^2
+}
+\arrow(c1.base east--c2.base west){->[\cond{$-$\ce{CO_2}}][][18pt]}
+\chemleft[
+\chemfig{
+    R^1
+    -[1]
+        (=[3]\textcolor{O}{O})
+    -[-1]R^2
+}
+\chemright]
+\arrow(c2.base east--c3.base west){->[\cond{$-$hν}][][18pt]}
+\chemfig{
+    R^1
+    -[1]
+        (=[3]\textcolor{O}{O})
+    -[-1]R^2
+}
+\schemestop
+\chemmove[
+    arrows = {-Triangle[scale = 0.67]},
+    shorten <= 0.1ex,
+    shorten >= 0.1ex,
+    line width = 0.1em,
+    r
+]{
+    \draw (oo) .. controls +(180:7.5pt) and +(-90:7.5pt) .. ([xshift=3pt]oc);
+    \draw (cc) .. controls +(0:7.5pt) and +(90:7.5pt) .. ([xshift=3pt]co);
+}
+\chemmove{
+    \node[xshift = 0.5ex] at (c2.north east) {$*$};
 }
 \end{struct}
