@@ -100,7 +100,7 @@ requires `pdf2svg`, `pdfcrop` and `sed`.
 
    ![](svg/dark/05.svg#gh-dark-mode-only)
 
-2. Ruthenium trisbypridine charged complex
+2. Ruthenium trisbipyridine charged complex
 
    ![](svg/light/07.svg#gh-light-mode-only)
 
