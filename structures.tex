@@ -1,48 +1,48 @@
 % simple structure that shows joined rings and coloured atoms, as well as use of
 % the \chemabove{}{} macro
 \begin{struct}
-    \chemfig{
-        *6(
+\chemfig{
+    *6(
+        -
+        =
+        -
+        (-\textcolor{N}{N}*6(
             -
-            =
             -
-            (-\textcolor{N}{N}*6(
-                -
-                -
-                -\textcolor{N}{N}(
-                    -[1]
-                    -[-1]
-                    -[1]
-                    -[-1]
-                    -[1]\textcolor{O}{O}
-                    -[-1]*6(
+            -\textcolor{N}{N}(
+                -[1]
+                -[-1]
+                -[1]
+                -[-1]
+                -[1]\textcolor{O}{O}
+                -[-1]*6(
+                    -
+                    =
+                    -
+                    (*6(
                         -
-                        =
                         -
-                        (*6(
-                            -
-                            -
-                            -
-                            (=\textcolor{O}{O})
-                            -\textcolor{N}{\chemabove{N}{H}}
-                            -
-                            -[,,,,draw=none]
-                        ))
-                        =
                         -
-                        =
-                    )
+                        (=\textcolor{O}{O})
+                        -\textcolor{N}{\chemabove{N}{H}}
+                        -
+                        -[,,,,draw=none]
+                    ))
+                    =
+                    -
+                    =
                 )
-                -
-                -
-                -))
-            =
-            (-\textcolor{Cl}{Cl})
+            )
             -
-            (-\textcolor{Cl}{Cl})
-            =
-        )
-    }
+            -
+            -))
+        =
+        (-\textcolor{Cl}{Cl})
+        -
+        (-\textcolor{Cl}{Cl})
+        =
+    )
+}
 \end{struct}
 
 % structure showing the use of a single hook (?) to join distant atoms, in this
@@ -50,127 +50,127 @@
 % also shows how to alter colour, style and type of bonds
 % shows the use of an invisible bond to place a stereocentre indicator
 \begin{struct}
-    \chemfig{
-        ?-[1.5,,,,t]
-        -[-1,,,,t]
-        -[0,,,,t](-[3,,,,t]\textcolor{Ot}{O}|\textcolor{Ot}{H})(
-            -[-1,,,,t](
-                -[-3]*6(
-                    -
-                    =
-                    -(
-                        -[,,,,t]\textcolor{Ot}{O}
-                        -[-1,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3}
-                    )
-                    =
-                    -
-                    =
+\chemfig{
+    ?-[1.5,,,,t]
+    -[-1,,,,t]
+    -[0,,,,t](-[3,,,,t]\textcolor{Ot}{O}|\textcolor{Ot}{H})(
+        -[-1,,,,t](
+            -[-3]*6(
+                -
+                =
+                -(
+                    -[,,,,t]\textcolor{Ot}{O}
+                    -[-1,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3}
                 )
+                =
+                -
+                =
             )
-            (-[3,0.33,,,draw=none]\textcolor{t}{*})
-            -[1]
-            -[-1]\textcolor{N}{N}
-            (-[-3,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3})
-            -[1,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3}
         )
-        <[-4.5,,,,t]
-        -[5,,,,t,line width = 0.8ex, shorten <= -0.33ex, shorten >= -0.33ex]
-        ?[,{<},{t}]
-    }
+        (-[3,0.33,,,draw=none]\textcolor{t}{*})
+        -[1]
+        -[-1]\textcolor{N}{N}
+        (-[-3,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3})
+        -[1,,,,t]\textcolor{t}{C}|\textcolor{t}{H_3}
+    )
+    <[-4.5,,,,t]
+    -[5,,,,t,line width = 0.8ex, shorten <= -0.33ex, shorten >= -0.33ex]
+    ?[,{<},{t}]
+}
 \end{struct}
 
 % shows the use of wedge and dash bonds as well as the stereochemical marker
 \begin{struct}
-    \chemfig{
-        \textcolor{N}{N}~[1]
-        -[1]*6(
+\chemfig{
+    \textcolor{N}{N}~[1]
+    -[1]*6(
+        -
+        =(*5(
             -
-            =(*5(
+            -\textcolor{O}{O}
+            -
+            (-[-3.75,0.5,,,draw=none]\stereomarker{S})
+            (<:[4]*6(
                 -
-                -\textcolor{O}{O}
+                =
                 -
-                (-[-3.75,0.5,,,draw=none]\stereomarker{S})
-                (<:[4]*6(
-                    -
-                    =
-                    -
-                    (-\textcolor{F}{F})
-                    =
-                    -
-                    =
-                ))
-                (
-                    <[1]
-                    -[-1]
-                    -[1]
-                    -[-1]\textcolor{N}{N}
-                    (-[-3]CH_3)
-                    -[1]CH_3
-                )
+                (-\textcolor{F}{F})
+                =
                 -
-                -[,,,,draw=none]
+                =
             ))
+            (
+                <[1]
+                -[-1]
+                -[1]
+                -[-1]\textcolor{N}{N}
+                (-[-3]CH_3)
+                -[1]CH_3
+            )
             -
-            =
-            -
-            =
-        )
-    }
+            -[,,,,draw=none]
+        ))
+        -
+        =
+        -
+        =
+    )
+}
 \end{struct}
 
 % shows the basics of a scheme, including electron movement, arrows and reaction
 % conditions, as well as aligning of molecules in a scheme
 \begin{struct}
-    \schemestart
-    \chemfig{
-        *6(
-            (-[-3]H)
-            -[@{b1},,,,draw=none]
-            =[@{d1}]
-            -[@{s1}]
-            (~[@{t1}3]\charge{90=\:}{\textcolor{N}{N}})
-            -[,,,,draw=none]@{b2}
-            -[,,,,draw=none]
-            (-[3]H)
-            ~[@{t2}]
-        )
-    }
-    \arrow(c2.base east--c2.base west){<=>[\cond{Δ}][][8.4pt]}
-    \chemleft[
-    \chemfig{
-        *6(
-            -
-            -
-            =
-            =\charge{90=\:}{\textcolor{N}{N}}
-            -
-            =
-        )
-    }
-    \chemright]
-    \arrow(c2.base east--c2.base west){->[\cond{±\ce{H+}}][][8.4pt]}
-    \chemfig{
-        *6(
-            -
-            =
-            -
-            =\charge{90=\:}{\textcolor{N}{N}}
-            -
-            =
-        )
-    }
-    \schemestop
-    \chemmove[
-        arrows = {-Triangle[scale = 0.67]},
-        shorten <= 0.77ex,
-        shorten >= 0.1ex,
-        line width = 0.1em,
-        r
-    ]{
-        \draw (d1) .. controls +(100:1em) and +(80:1em) .. (b1);
-        \draw (t1) .. controls +(180:1em) and +(-180:1em) .. (s1);
-        \draw (t2) .. controls +(-20:1em) and +(-90:1em) .. (b2);
-    }
+\schemestart
+\chemfig{
+    *6(
+        (-[-3]H)
+        -[@{b1},,,,draw=none]
+        =[@{d1}]
+        -[@{s1}]
+        (~[@{t1}3]\charge{90=\:}{\textcolor{N}{N}})
+        -[,,,,draw=none]@{b2}
+        -[,,,,draw=none]
+        (-[3]H)
+        ~[@{t2}]
+    )
+}
+\arrow(c2.base east--c2.base west){<=>[\cond{Δ}][][8.4pt]}
+\chemleft[
+\chemfig{
+    *6(
+        -
+        -
+        =
+        =\charge{90=\:}{\textcolor{N}{N}}
+        -
+        =
+    )
+}
+\chemright]
+\arrow(c2.base east--c2.base west){->[\cond{±\ce{H+}}][][8.4pt]}
+\chemfig{
+    *6(
+        -
+        =
+        -
+        =\charge{90=\:}{\textcolor{N}{N}}
+        -
+        =
+    )
+}
+\schemestop
+\chemmove[
+    arrows = {-Triangle[scale = 0.67]},
+    shorten <= 0.77ex,
+    shorten >= 0.1ex,
+    line width = 0.1em,
+    r
+]{
+    \draw (d1) .. controls +(100:1em) and +(80:1em) .. (b1);
+    \draw (t1) .. controls +(180:1em) and +(-180:1em) .. (s1);
+    \draw (t2) .. controls +(-20:1em) and +(-90:1em) .. (b2);
+}
 \end{struct}
 
 % shows the use of the \chemmove{} macro to draw on top of the structure,
@@ -178,146 +178,367 @@
 % nodes for ligands with hapticity greater than unity
 % shows how to draw lone pairs on an atom
 \begin{struct}
-    \chemfig{
-        \textcolor{Fe}{Fe}
-        (-[3,1.25,,,]@{top}
-        -[3,0.4,,,draw=none](
-            [1]-[-0.5,,,,]
-            (-[0](=[2]\textcolor{O}{O})-[-2]C|H_3)
-            <[-4,0.67]?[1]
-        )(
-            -[-5.5]
-            <[-2,0.67]
-            ?[1,,{line width=0.8ex},{shorten <= -0.33ex},{shorten >= -0.33ex}]
-        ))
-        (-[-3,1.15,,,]@{bottom}
-        -[-3,0.5,,,draw=none](
-            >[0.5,,,,]
-            -[4,0.67]?[2]
-        )(
-            >[5.5,,,,]
-            (-[6](=[4]\textcolor{O}{O})-[-4,,,2]H_3|C)
-            -[2,0.67]
-            ?[2,,]
-        ))
-    }
-    \chemmove[line width = 0.1em]{
-        \draw (top) ellipse (1em and 0.4em);
-        \draw (bottom) ellipse (1em and 0.4em);
-    }
+\chemfig{
+    \textcolor{Fe}{Fe}
+    (-[3,1.25,,,]@{top}
+    -[3,0.4,,,draw=none](
+        [1]-[-0.5,,,,]
+        (-[0](=[2]\textcolor{O}{O})-[-2]C|H_3)
+        <[-4,0.67]?[1]
+    )(
+        -[-5.5]
+        <[-2,0.67]
+        ?[1,,{line width=0.8ex},{shorten <= -0.33ex},{shorten >= -0.33ex}]
+    ))
+    (-[-3,1.15,,,]@{bottom}
+    -[-3,0.5,,,draw=none](
+        >[0.5,,,,]
+        -[4,0.67]?[2]
+    )(
+        >[5.5,,,,]
+        (-[6](=[4]\textcolor{O}{O})-[-4,,,2]H_3|C)
+        -[2,0.67]
+        ?[2,,]
+    ))
+}
+\chemmove[line width = 0.1em]{
+    \draw (top) ellipse (1em and 0.4em);
+    \draw (bottom) ellipse (1em and 0.4em);
+}
 \end{struct}
 
 % an example showing the more complex use of mutiple hooks to generate a multi-
 % cyclic, non-planar structure
 \begin{struct}
-    \chemfig{
-        ?[1]-[2](
-            -[3]
-            -[0.5]?[2]
-            -[3]\charge{90=\:}{\textcolor{N}{N}}|\textcolor{N}{H_2}
-        )
-            (-[-5.5]H_3|C)
-        -[-0.5]
-        -[0.5]
-            (-[3]?[2])
-            (-[-0.5]C|H_3)
-        -[-4]
-        -[5.5]
-        ?[1]
-            (-[3]?[2])
-    }
+\chemfig{
+    ?[1]-[2](
+        -[3]
+        -[0.5]?[2]
+        -[3]\charge{90=\:}{\textcolor{N}{N}}|\textcolor{N}{H_2}
+    )
+        (-[-5.5]H_3|C)
+    -[-0.5]
+    -[0.5]
+        (-[3]?[2])
+        (-[-0.5]C|H_3)
+    -[-4]
+    -[5.5]
+    ?[1]
+        (-[3]?[2])
+}
 \end{struct}
 
 % structure showing an octahedral metal complex with an overall charge
 % utilises invisible bonds for alignment and hooks for creating bonds
 % shows how to construct a dative bond
 \begin{struct}
-    \schemestart
-    \chemleft[
-    \chemfig{
-        @{Ru}\textcolor{Ru}{Ru}-[-1,2,,,draw=none]@{N1}\textcolor{N}{N}**6(
-            -?[rings]
+\schemestart
+\chemleft[
+\chemfig{
+    @{Ru}\textcolor{Ru}{Ru}-[-1,2,,,draw=none]@{N1}\textcolor{N}{N}**6(
+        -?[rings]
+        -
+        -
+        -
+        -(-[,,,,draw=none]**6(
             -
             -
             -
-            -(-[,,,,draw=none]**6(
+            -(-[,,,,]**6(
                 -
                 -
                 -
-                -(-[,,,,]**6(
+                -(-[,,,,draw=none]**6(
                     -
                     -
                     -
-                    -(-[,,,,draw=none]**6(
+                    -(-[,,,,]**6(
                         -
                         -
                         -
-                        -(-[,,,,]**6(
+                        -(-[,,,,draw=none]**6(
                             -
                             -
                             -
-                            -(-[,,,,draw=none]**6(
-                                -
-                                -
-                                -
-                                -(?[rings])
-                                -@{N2}\textcolor{N}{N}
-                                -
-                            ))
-                            -@{N3}\textcolor{N}{N}
+                            -(?[rings])
+                            -@{N2}\textcolor{N}{N}
                             -
                         ))
-                        -@{N4}\textcolor{N}{N}
+                        -@{N3}\textcolor{N}{N}
                         -
                     ))
-                    -@{N5}\textcolor{N}{N}
+                    -@{N4}\textcolor{N}{N}
                     -
                 ))
-                -@{N6}\textcolor{N}{N}
+                -@{N5}\textcolor{N}{N}
                 -
             ))
+            -@{N6}\textcolor{N}{N}
             -
-        )
-    }
-    \chemright]
-    \schemestop
-    \chemmove[
-        arrows = {-Triangle[scale = 0.67]},
-        shorten <= 0.33ex,
-        shorten >= 0.33ex,
-        line width = 0.1em
-    ]{
-        \draw (N1) -- (Ru);
-        \draw (N2) -- (Ru);
-        \draw (N3) -- (Ru);
-        \draw (N4) -- (Ru);
-        \draw (N5) -- (Ru);
-        \draw (N6) -- (Ru);
-    }
-   \chemmove{
-        \node[xshift = 1ex] at (c1.north east) {2+};
-   }
+        ))
+        -
+    )
+}
+\chemright]
+\schemestop
+\chemmove[
+    arrows = {-Triangle[scale = 0.67]},
+    shorten <= 0.33ex,
+    shorten >= 0.33ex,
+    line width = 0.1em
+]{
+    \draw (N1) -- (Ru);
+    \draw (N2) -- (Ru);
+    \draw (N3) -- (Ru);
+    \draw (N4) -- (Ru);
+    \draw (N5) -- (Ru);
+    \draw (N6) -- (Ru);
+}
+\chemmove{
+    \node[xshift = 1ex] at (c1.north east) {2+};
+}
 \end{struct}
 
 % polymer example using the \polymerdelim maco
 \begin{struct}
-    \chemfig{
-        -[@{open}1]
-        -[-1]
-            (-[-3]*6(
+\chemfig{
+    -[@{open}1]
+    -[-1]
+        (-[-3]*6(
+            -
+            =
+            -
+            =
+            -
+            =
+        ))
+    -[@{close}1]
+}
+\polymerdelim[
+    delimiters = {[]},
+    height = 0.84em,
+    depth = 0.84em,
+    indice = {\text{\emph{n}}}
+]{open}{close}
+\end{struct}
+
+% shows how structural elements can be rotate to the desired angle -- i.e.
+% aligning a 7 membered ring
+\begin{struct}
+\chemfig{
+    [:12.857]*7(
+        -\textcolor{S}{S}
+        -(*6(
+            -
+            =
+            -
+            =
+            -
+            =
+        ))
+        -
+        -(
+            -[2]\textcolor{N}{N}*6(
+                -[0]
+                -
+                -\textcolor{N}{N}(
+                    -
+                    -[0]
+                    -[-2]\textcolor{O}{O}
+                    -[0]
+                    -[-2]
+                    -[-4]\textcolor{O}{H}|\textcolor{O}{O}
+                )
+                -
+                -
+                -\textcolor{N}{N}
+            )
+        )
+        =\textcolor{N}{N}
+        -(*6(
+            -
+            =
+            -
+            =
+            -
+            =
+        ))
+        -
+    )
+}
+\end{struct}
+
+% complex cage or bi/tricyclic structures using hooks and absolute angles
+\begin{struct}
+\chemfig{
+    *6(
+        =
+        -
+        =(
+            -(
+                <:[3]
+                -[5,,,2]\textcolor{O}{H}|\textcolor{O}{O}
+            )
+            -[-1](
+                =[-3]\textcolor{O}{O}
+            )
+            -[1]\textcolor{O}{O}
+            -[3]
+            ?[1]-[0.5]
+            -[-0.5](
+                -[-3]?[2]
+                -[1.5]\textcolor{O}{O}?[3]
+            )
+            -[2]\textcolor{N}{N}(
+                -[2.5]
+            )
+            -[-5.5](
+                -[-3]
+                (?[3])
+                ?[2]
+            )
+            -[5.5]
+            ?[1]
+        )
+        -
+        =
+        -
+    )
+}
+\end{struct}
+
+% classic caffeine-like example (8-chlorotheophylline)
+\begin{struct}
+\chemfig{
+    \textcolor{O}{O}=[1]
+    *6(
+        -\textcolor{N}{N}(-)
+        -(*5(
+            -\textcolor{N}{N}
+            =(-\textcolor{Cl}{Cl})
+            -\chemabove{\textcolor{N}{N}}{\textcolor{N}{H}}
+            -
+            =
+        ))
+        -
+        -(=\textcolor{O}{O})
+        -\textcolor{N}{N}(-)
+        -
+    )
+}
+\end{struct}
+
+% shows shifted double bonds
+\begin{struct}
+\chemfig{
+    *6(
+        -(
+            -\textcolor{O}{O}
+            -[-1]
+        )
+        =
+        -(
+            -
+            -[-1]
+            =^[1]
+        )
+        =
+        -(*5(
+            -\textcolor{O}{O}
+            -
+            -\textcolor{O}{O}
+            -
+            -
+        ))
+        =
+    )
+}
+\end{struct}
+
+% shows how to rotate elements of the structure as well as using relative
+% rotation angles for bonds
+\begin{struct}
+\chemfig{
+    [:-30]*6(
+        -(*5(
+            -\textcolor{N}{N}(
+                -
+                -[::-60]*6(
+                    -
+                    =
+                    -
+                    =
+                    -
+                    =
+                )
+            )
+            -\textcolor{N}{N}
+            =(
+                -\textcolor{O}{O}
+                -[::+60]
+                -[::-60]
+                -[::+60]
+                -[::-60]\textcolor{N}{N}
+                (-[::-60])
+                -[::+60]
+            )
+            -
+            -
+        ))
+        =
+        -
+        =
+        -
+        =
+    )
+}
+\end{struct}
+
+% a more extreme nested ring example
+\begin{struct}
+\chemfig{
+    *6(
+        =
+        -(*6(
+            -
+            =
+            -(*6(
                 -
                 =
+                -(*6(
+                    -
+                    =
+                    -(*6(
+                        -
+                        =
+                        -(*6(
+                            -
+                            =
+                            -
+                            -
+                            -
+                            =
+                        ))
+                        -
+                        -
+                        =
+                    ))
+                    -
+                    -
+                    =
+                ))
                 -
-                =
                 -
                 =
             ))
-        -[@{close}1]
-    }
-    \polymerdelim[
-        delimiters = {[]},
-        height = 0.84em,
-        depth = 0.84em,
-        indice = {\text{\emph{n}}}
-    ]{open}{close}
+            -
+            -
+            =
+        ))
+        -
+        -
+        =
+        -
+    )
+}
 \end{struct}

@@ -48,6 +48,42 @@ requires `pdf2svg`, `pdfcrop` and `sed`.
 
    ![](svg/dark/06.svg#gh-dark-mode-only)
 
+5. Quetiapine
+
+   ![](svg/light/09.svg#gh-light-mode-only)
+
+   ![](svg/dark/09.svg#gh-dark-mode-only)
+
+6. Scopolamine
+
+   ![](svg/light/10.svg#gh-light-mode-only)
+
+   ![](svg/dark/10.svg#gh-dark-mode-only)
+
+7. 8-Chlorotheophylline
+
+   ![](svg/light/11.svg#gh-light-mode-only)
+
+   ![](svg/dark/11.svg#gh-dark-mode-only)
+
+8. Myristicin
+
+   ![](svg/light/12.svg#gh-light-mode-only)
+
+   ![](svg/dark/12.svg#gh-dark-mode-only)
+
+9. Benzydamine
+
+   ![](svg/light/13.svg#gh-light-mode-only)
+
+   ![](svg/dark/13.svg#gh-dark-mode-only)
+
+10. Coronine/Superbenzene
+
+   ![](svg/light/14.svg#gh-light-mode-only)
+
+   ![](svg/dark/14.svg#gh-dark-mode-only)
+
 ### Polymers
 
 1. Homopolymer polystyrene
