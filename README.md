@@ -78,11 +78,11 @@ requires `pdf2svg`, `pdfcrop` and `sed`.
 
    ![](svg/dark/13.svg#gh-dark-mode-only)
 
-10. Coronine/Superbenzene
+10. Coronene/Superbenzene
 
-   ![](svg/light/14.svg#gh-light-mode-only)
+    ![](svg/light/14.svg#gh-light-mode-only)
 
-   ![](svg/dark/14.svg#gh-dark-mode-only)
+    ![](svg/dark/14.svg#gh-dark-mode-only)
 
 ### Polymers
 
