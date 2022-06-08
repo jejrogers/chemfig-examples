@@ -291,23 +291,23 @@
 }
 \schemestop
 \chemmove[
-    arrows = {-Triangle[scale = 0.67]},
+    arrows = {Triangle[scale = 0.67]-},
     shorten <= 0.33ex,
     shorten >= 0.33ex,
     line width = 0.1em
 ]{
-    \draw (N1) -- (Ir);
-    \draw (N2) -- (Ir);
-    \draw (N3) -- (Ir);
+    \draw (Ir) -- (N1);
+    \draw (Ir) -- (N2);
+    \draw (Ir) -- (N3);
 }
 \chemmove[
     arrows = {-},
-    shorten >= 0.33ex,
+    shorten <= 0.33ex,
     line width = 0.1em
 ]{
-    \draw (C1) -- (Ir);
-    \draw (C2) -- (Ir);
-    \draw (C3) -- (Ir);
+    \draw (Ir) -- (C1);
+    \draw (Ir) -- (C2);
+    \draw (Ir) -- (C3);
 }
 \end{struct}
 
@@ -597,5 +597,88 @@
 }
 \chemmove{
     \node[xshift = 0.5ex] at (c2.north east) {$*$};
+}
+\end{struct}
+
+% a more complex mechanism with multiple arrows and reagents
+\begin{struct}
+\schemestart
+\chemfig{
+    @{nitro}\textcolor{O}{O}
+    =[@{d3}3]\charge{-150:3pt=⊕}{\textcolor{N}{N}}
+        (-[5]\charge{90:3pt=⊖}{\textcolor{O}{O}})
+    -[@{s2}1]*6(
+        -
+        =
+        -@{para}
+            (-\textcolor{Cl}{Cl})
+        =[@{d1}]
+        -[@{s1}]
+        =[@{d2}]
+    )
+}
+\arrow{0}[,0.2]
+\chemfig{
+    @{ohm}\charge{135:1pt=⊖}{\textcolor{O}{O}}\textcolor{O}{H}
+}
+\arrow{->}
+\chemfig{
+    @{om}\charge{-135:1pt=⊖}{\textcolor{O}{O}}
+    -[@{is1}3]\charge{-150:3pt=⊕}{\textcolor{N}{N}}
+        (-[5]\charge{90:3pt=⊖}{\textcolor{O}{O}})
+    =[@{id1}1]*6(
+        -
+        =
+        -
+            (-[@{is4}2]@{cl}\textcolor{Cl}{Cl})
+            (-[0]\textcolor{O}{O}|\textcolor{O}{H})
+        -[@{is3}]
+        =[@{id2}]
+        -[@{is2}]
+    )
+}
+\arrow{->}
+\chemfig{
+    \textcolor{O}{O}
+    =[3]\charge{90:3pt=⊕}{\textcolor{N}{N}}
+        (-[5]\charge{90:3pt=⊖}{\textcolor{O}{O}})
+    -[1]*6(
+        -
+        =
+        -
+            (-\textcolor{O}{O}|\textcolor{O}{H})
+        =
+        -
+        =
+    )
+}
+\arrow{0}[,0.2]
+\chemfig{
+    \charge{135:1pt=⊖}{\textcolor{Cl}{Cl}}
+}
+\schemestop
+\chemmove[
+    arrows = {-Triangle[scale = 0.67]},
+    shorten <= 0.1ex,
+    shorten >= 0.1ex,
+    line width = 0.1em,
+    r
+]{
+    \draw (ohm) .. controls +(180:12pt) and +(-60:30pt) .. (para);
+    \draw (d1) .. controls +(45:24pt) and +(135:24pt) .. (s1);
+    \draw (d2) .. controls +(180:6pt) and +(120:12pt) .. (s2);
+    \draw[shorten <= 0.33ex] (d3) .. controls +(0:24pt) and +(-20:24pt) .. (nitro);
+}
+\chemmove[
+    arrows = {-Triangle[scale = 0.67]},
+    shorten <= 0.1ex,
+    shorten >= 0.1ex,
+    line width = 0.1em,
+    r
+]{
+    \draw (om) .. controls +(-45:24pt) and +(0:24pt) .. (is1);
+    \draw[shorten <= 0.33ex] (id1) .. controls +(135:12pt) and +(170:12pt) .. (is2);
+    \draw (id2) .. controls +(135:24pt) and +(45:24pt) .. (is3);
+    \draw (is4) .. controls +(0:24pt) and +(10:24pt) .. (cl);
 }
 \end{struct}
