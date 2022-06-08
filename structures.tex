@@ -314,7 +314,7 @@
 % polymer example using the \polymerdelim maco
 \begin{struct}
 \chemfig{
-    -[@{open}1]
+    H_3|C-[@{open}1,,2]
     -[-1]
         (-[-3]*6(
             -
@@ -324,7 +324,7 @@
             -
             =
         ))
-    -[@{close}1]
+    -[@{close}1,,,1]C|H_3
 }
 \polymerdelim[
     delimiters = {[]},
@@ -402,7 +402,7 @@
                 -[1.5]\textcolor{O}{O}?[3]
             )
             -[2]\textcolor{N}{N}(
-                -[2.5]
+                -[2.5]C|H_3
             )
             -[-5.5](
                 -[-3]
@@ -424,7 +424,7 @@
 \chemfig{
     \textcolor{O}{O}=[1]
     *6(
-        -\textcolor{N}{N}(-)
+        -\textcolor{N}{N}(-C|H_3)
         -(*5(
             -\textcolor{N}{N}
             =(-\textcolor{Cl}{Cl})
@@ -434,7 +434,7 @@
         ))
         -
         -(=\textcolor{O}{O})
-        -\textcolor{N}{N}(-)
+        -\textcolor{N}{N}(-[,,,2]H_3|C)
         -
     )
 }
@@ -446,13 +446,13 @@
     *6(
         -(
             -\textcolor{O}{O}
-            -[-1]
+            -[-1]C|H_3
         )
         =
         -(
             -
             -[-1]
-            =^[1]
+            =^[1]C|H_2
         )
         =
         -(*5(
@@ -491,8 +491,8 @@
                 -[::-60]
                 -[::+60]
                 -[::-60]\textcolor{N}{N}
-                (-[::-60])
-                -[::+60]
+                (-[::-60]C|H_3)
+                -[::+60]C|H_3
             )
             -
             -
