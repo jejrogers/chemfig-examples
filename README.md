@@ -122,6 +122,6 @@ requires `pdf2svg`, `pdfcrop` and `sed`.
 
 3. Nucleophilic aromatic substitution reaction
 
-   ![](svg/light/15.svg#gh-light-mode-only)
+   ![](svg/light/16.svg#gh-light-mode-only)
 
-   ![](svg/dark/15.svg#gh-dark-mode-only)
+   ![](svg/dark/16.svg#gh-dark-mode-only)
