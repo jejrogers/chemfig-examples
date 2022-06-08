@@ -123,14 +123,14 @@
 \begin{struct}
 \schemestart
 \chemfig{
-    *6(
+    @{o1}*6(
         (-[-3]H)
-        -[@{b1},,,,draw=none]
+        -[@{b1},,,,draw=none]@{e1}
         =[@{d1}]
         -[@{s1}]
-        (~[@{t1}3]\charge{90=\:}{\textcolor{N}{N}})
+        (~[@{t1}3]@{e2}\charge{90=\:}{\textcolor{N}{N}})
         -[,,,,draw=none]@{b2}
-        -[,,,,draw=none]
+        -[,,,,draw=none]@{o2}
         (-[3]H)
         ~[@{t2}]
     )
@@ -170,6 +170,17 @@
     \draw (d1) .. controls +(100:1em) and +(80:1em) .. (b1);
     \draw (t1) .. controls +(180:1em) and +(-180:1em) .. (s1);
     \draw (t2) .. controls +(-20:1em) and +(-90:1em) .. (b2);
+}
+\chemmove[
+    arrows = {-},
+    shorten <= 0.1ex,
+    shorten >= 0.1ex,
+    line width = 0.1em,
+    rt,
+    dashed
+]{
+    \draw (o1) -- (e1);
+    \draw (o2) -- (e2);
 }
 \end{struct}
 
