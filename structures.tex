@@ -228,58 +228,56 @@
 }
 \end{struct}
 
-% structure showing an octahedral metal complex with an overall charge
+% structure showing an octahedral metal complex
 % utilises invisible bonds for alignment and hooks for creating bonds
 % shows how to construct a dative bond
 \begin{struct}
 \schemestart
-\chemleft[
 \chemfig{
-    @{Ru}\textcolor{Ru}{Ru}-[-1,2,,,draw=none]@{N1}\textcolor{N}{N}**6(
+    @{Ir}Ir-[-1,2,,,draw=none]@{C1}*6(
         -?[rings]
+        =
         -
-        -
-        -
-        -(-[,,,,draw=none]**6(
+        =
+        -(-[,,,,draw=none]*6(
             -
+            =
             -
-            -
-            -(-[,,,,]**6(
+            =(-[,,,,]*6(
                 -
+                =
                 -
-                -
-                -(-[,,,,draw=none]**6(
+                =(-[,,,,draw=none]*6(
                     -
+                    =
                     -
-                    -
-                    -(-[,,,,]**6(
+                    =(-[,,,,]*6(
                         -
+                        =
                         -
-                        -
-                        -(-[,,,,draw=none]**6(
+                        =(-[,,,,draw=none]*6(
                             -
+                            =
                             -
-                            -
-                            -(?[rings])
-                            -@{N2}\textcolor{N}{N}
-                            -
+                            =(?[rings])
+                            -@{N1}\textcolor{N}{N}
+                            =
                         ))
-                        -@{N3}\textcolor{N}{N}
-                        -
+                        -@{C3}
+                        =
                     ))
-                    -@{N4}\textcolor{N}{N}
-                    -
+                    -@{N2}\textcolor{N}{N}
+                    =
                 ))
-                -@{N5}\textcolor{N}{N}
-                -
+                -@{C2}
+                =
             ))
-            -@{N6}\textcolor{N}{N}
-            -
+            -@{N3}\textcolor{N}{N}
+            =
         ))
-        -
+        =
     )
 }
-\chemright]
 \schemestop
 \chemmove[
     arrows = {-Triangle[scale = 0.67]},
@@ -287,15 +285,18 @@
     shorten >= 0.33ex,
     line width = 0.1em
 ]{
-    \draw (N1) -- (Ru);
-    \draw (N2) -- (Ru);
-    \draw (N3) -- (Ru);
-    \draw (N4) -- (Ru);
-    \draw (N5) -- (Ru);
-    \draw (N6) -- (Ru);
+    \draw (N1) -- (Ir);
+    \draw (N2) -- (Ir);
+    \draw (N3) -- (Ir);
 }
-\chemmove{
-    \node[xshift = 1ex] at (c1.north east) {2+};
+\chemmove[
+    arrows = {-},
+    shorten >= 0.33ex,
+    line width = 0.1em
+]{
+    \draw (C1) -- (Ir);
+    \draw (C2) -- (Ir);
+    \draw (C3) -- (Ir);
 }
 \end{struct}
 
@@ -376,7 +377,7 @@
         -
         =(
             -(
-                <:[3]
+                <[3]
                 -[5,,,2]\textcolor{O}{H}|\textcolor{O}{O}
             )
             -[-1](
@@ -556,7 +557,7 @@
     -[@{cc}-3]
     <:[-3]R^2
 }
-\arrow(c1.base east--c2.base west){->[\cond{$-$\ce{CO_2}}][][18pt]}
+\arrow(c1.base east--c2.base west){->[\cond{$-$\ce{C}\textcolor{O}{\ce{O_2}}}][][18pt]}
 \chemleft[
 \chemfig{
     R^1
@@ -565,7 +566,7 @@
     -[-1]R^2
 }
 \chemright]
-\arrow(c2.base east--c3.base west){->[\cond{$-$hν}][][18pt]}
+\arrow(c2.base east--c3.base west){->[\cond{$-$\emph{hν}}][][18pt]}
 \chemfig{
     R^1
     -[1]

@@ -15,12 +15,6 @@
 <path style="stroke:none;" d="M 7.765625 -8.71875 L 7.765625 0 L 6.515625 0 L 2.015625 -7.0625 L 2.015625 0 L 0.953125 0 L 0.953125 -8.71875 L 2.15625 -8.71875 L 6.71875 -1.59375 L 6.71875 -8.71875 Z M 7.765625 -8.71875 "/>
 </symbol>
 </g>
-<clipPath id="clip1">
-  <path d="M 50 37 L 56 37 L 56 58 L 50 58 Z M 50 37 "/>
-</clipPath>
-<clipPath id="clip2">
-  <path d="M 50.296875 37.160156 L 55.308594 37.160156 L 52.804688 57.125 L 50.296875 37.160156 "/>
-</clipPath>
 </defs>
 <g id="surface46">
 <path style="fill:none;stroke-width:1.1956;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(98.999023%,98.999023%,98.999023%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.00059375 -0.00121875 L 17.289656 -9.981687 " transform="matrix(1,0,0,-1,0.933,87.073)"/>
@@ -29,11 +23,7 @@
 <path style="fill:none;stroke-width:1.1956;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(98.999023%,98.999023%,98.999023%);stroke-opacity:1;stroke-miterlimit:10;" d="M 34.582625 -0.00121875 L 34.582625 19.963625 " transform="matrix(1,0,0,-1,0.933,87.073)"/>
 <path style="fill:none;stroke-width:1.1956;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(98.999023%,98.999023%,98.999023%);stroke-opacity:1;stroke-miterlimit:10;" d="M 30.383406 2.424563 L 30.383406 17.54175 " transform="matrix(1,0,0,-1,0.933,87.073)"/>
 <path style="fill:none;stroke-width:1.1956;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(98.999023%,98.999023%,98.999023%);stroke-opacity:1;stroke-miterlimit:10;" d="M 34.582625 19.963625 L 51.871688 29.948 " transform="matrix(1,0,0,-1,0.933,87.073)"/>
-<g clip-path="url(#clip1)" clip-rule="nonzero">
-<g clip-path="url(#clip2)" clip-rule="nonzero">
-<path style="fill:none;stroke-width:5.01167;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(98.999023%,98.999023%,98.999023%);stroke-opacity:1;stroke-dasharray:1.1956,2.39102;stroke-miterlimit:10;" d="M 51.871688 49.912844 L 51.871688 29.948 " transform="matrix(1,0,0,-1,0.933,87.073)"/>
-</g>
-</g>
+<path style="fill-rule:nonzero;fill:rgb(98.999023%,98.999023%,98.999023%);fill-opacity:1;stroke-width:1.1956;stroke-linecap:butt;stroke-linejoin:bevel;stroke:rgb(98.999023%,98.999023%,98.999023%);stroke-opacity:1;stroke-miterlimit:10;" d="M 49.363875 49.912844 L 54.375594 49.912844 L 51.871688 29.948 Z M 49.363875 49.912844 " transform="matrix(1,0,0,-1,0.933,87.073)"/>
 <g style="fill:rgb(100%,29.998779%,29.998779%);fill-opacity:1;">
   <use xlink:href="#glyph0-1" x="30.827" y="31.47"/>
 </g>
