@@ -623,7 +623,7 @@
 }
 \arrow{->}
 \chemfig{
-    @{om}\charge{-135:1pt=⊖}{\textcolor{O}{O}}
+    @{om}\charge{-45:1pt=⊖}{\textcolor{O}{O}}
     -[@{is1}3]\charge{-150:3pt=⊕}{\textcolor{N}{N}}
         (-[5]\charge{90:3pt=⊖}{\textcolor{O}{O}})
     =[@{id1}1]*6(
@@ -664,8 +664,8 @@
     line width = 0.1em,
     r
 ]{
-    \draw (ohm) .. controls +(180:12pt) and +(-60:30pt) .. (para);
-    \draw (d1) .. controls +(45:24pt) and +(135:24pt) .. (s1);
+    \draw[shorten <= 2ex] (ohm) .. controls +(135:24pt) and +(0:24pt) .. (para);
+    \draw (d1) .. controls +(45:30pt) and +(135:30pt) .. (s1);
     \draw (d2) .. controls +(180:6pt) and +(120:12pt) .. (s2);
     \draw[shorten <= 0.33ex] (d3) .. controls +(0:24pt) and +(-20:24pt) .. (nitro);
 }
@@ -676,9 +676,9 @@
     line width = 0.1em,
     r
 ]{
-    \draw (om) .. controls +(-45:24pt) and +(0:24pt) .. (is1);
+    \draw[shorten <= 1.5ex] (om) .. controls +(-30:24pt) and +(0:24pt) .. (is1);
     \draw[shorten <= 0.33ex] (id1) .. controls +(135:12pt) and +(170:12pt) .. (is2);
-    \draw (id2) .. controls +(135:24pt) and +(45:24pt) .. (is3);
+    \draw (id2) .. controls +(135:30pt) and +(45:30pt) .. (is3);
     \draw (is4) .. controls +(0:24pt) and +(10:24pt) .. (cl);
 }
 \end{struct}
