@@ -84,6 +84,12 @@ requires `pdf2svg`, `pdfcrop` and `sed`.
 
     ![](svg/dark/14.svg#gh-dark-mode-only)
 
+11. A particularly complex example of a bioactive organic molecule, maitotoxin
+
+    ![](svg/light/17.svg#gh-light-mode-only)
+
+    ![](svg/dark/17.svg#gh-dark-mode-only)
+
 ### Polymers
 
 1. Homopolymer polystyrene
